@@ -18,7 +18,7 @@ contract CounterTest is Test {
     }
 
     // "Fail" keyword indicates a test is expected to fail
-    function testFailDec () public {
+    function testFailDec() public {
         counter.dec();
     }
 
