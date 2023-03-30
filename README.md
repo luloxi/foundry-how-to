@@ -2,6 +2,7 @@
 
 ## Useful commands
 
+- `forge init project_name` - Create new project
 - `forge build` - Compile contracts
 - `forge fmt` - Give format to Solidity code
 
@@ -9,6 +10,8 @@
 
 - `forge test`
 - `forge test --match-path test/TestName.t.sol`
+
+Add the modifier `-vvvv` for more verbosity. More "v" make it more verbose.
 
 ## Adding libraries
 
