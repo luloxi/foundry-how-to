@@ -11,7 +11,16 @@
 - `forge test`
 - `forge test --match-path test/TestName.t.sol`
 
-Add the modifier `-vvvv` for more verbosity. More "v" make it more verbose.
+- Add the modifier `-vvvv` for more verbosity. More "v" make it more verbose.
+- Using `address(1)` refers to the testing contract itself.
+- `import "forge-std/Test.sol";` for testing functionalities such as AssertEq (assert equal)
+- When starting test functions name with `testFail` we're telling Foundry that that function is meant to fail.
+
+### Prank
+
+- `vm.prank()` changes msg.sender to whatever address is between the parenthesis
+- Set msg.sender to address(1) for multiple calls: `vm.startPrank(address(1))`
+- Stop setting msg.sender to that address: `vm.stopPrank()`
 
 ## Adding libraries
 
